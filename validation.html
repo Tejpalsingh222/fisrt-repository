@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="validate.html"onsubmit="return validate()">
+    <p>Name:<input type="text"id="uname"> </p>
+    <p>Password:<input type="password"id="pass"> </p>
+    <button type="submit">submit</button>
+    </form>
+    <script>
+        function validate(){
+            let username=document.getElementById("uname");
+            let password=document.getElementById("pass");
+            if (username.value==""||password.value=="")
+        {
+            alert("no blank allowed")
+            return false;
+        }
+        else{
+            true;
+        }
+    }
+    </script>
+</body>
+</html>
